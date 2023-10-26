@@ -2,21 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Жопка мамонта</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-{% block content %}{% endblock %}
-<footer class="d-flex justify-content-center" style="background-color:#808080; color:yellow">
-    <span>made by <a href="https://t.me/mrendermeshka" style="color:yellow">Vitalii</a>, 2023</span>
-</footer>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://phonoteka.org/uploads/posts/2021-05/1620281742_22-phonoteka_org-p-krutoi-fon-dlya-video-22.jpg'); /* Замініть на свій фоновий зображення */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    .navbar .navbar-brand {
+        color: white;
+    }
+    .navbar .navbar-brand:hover {
+        color: white;
+    }
+    .navbar .btn-outline-success {
+        background-color: #007BFF;
+        color: #fff;
+    }
+    .card {
+        width: 18rem;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+        color: white; /* Колір тексту */
+    }
+    .card img {
+        max-width: 100%;
+    }
+    .card .card-title {
+        font-weight: bold;
+    }
+    .card .btn-primary {
+        background-color: #007BFF;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    .card:nth-child(5n+1) {
+        clear: both;
+    }
+
+</style>
+<body>
+<nav class="navbar">
+    <div class="container-fluid">
+        <a class="nav-link" href="/order" aria-disabled="true">Order</a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Пошук">
+            <button class="btn btn-outline-success" type="submit">Пошук</button>
+        </form>
+    </div>
+</nav>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" class="card-img-top" alt="Product 1">
+    <div class="card-body">
+        <h5 class="card-title">Rickroll</h5>
+        <p class="card-text">This is a masterpiece at a low price. Don't hesitate to buy it!</p>
+        <a href="#" class="btn btn-primary">Придбати</a>
+    </div>
+</div>
+
+    <?php
+$cookie_name = "user";
+$cookie_value = "John Doe";
+$expiration = time() + 3600;
+
+setcookie($cookie_name, $cookie_value, $expiration, "/");
+?>
+
+    <?php
+if(isset($_COOKIE["user"])) {
+    $username = $_COOKIE["user"];
+    echo "Вас звуть " . $username;
+} else {
+    echo "Куки не знайдено";
+}
+?>
+
 </body>
 </html>
